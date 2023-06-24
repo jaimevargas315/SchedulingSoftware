@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="client_scheduleDataSet3" targetNamespace="http://tempuri.org/client_scheduleDataSet3.xsd" xmlns:mstns="http://tempuri.org/client_scheduleDataSet3.xsd" xmlns="http://tempuri.org/client_scheduleDataSet3.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="client_scheduleConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="client_scheduleConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WindowsFormsApp1.Properties.Settings.GlobalReference.Default.client_scheduleConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="appointmentbymonthTableAdapter" GeneratorDataComponentClassName="appointmentbymonthTableAdapter" Name="appointmentbymonth" UserDataComponentName="appointmentbymonthTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="client_scheduleConnectionString (Settings)" DbObjectName="client_schedule.appointmentbymonth" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `appointmentId`, `customerId`, `userId`, `title`, `description`, `location`, `contact`, `type`, `url`, `start`, `end`, `createDate`, `createdBy`, `lastUpdate`, `lastUpdateBy` FROM `client_schedule`.`appointmentbymonth`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="appointmentId" DataSetColumn="appointmentId" />
+              <Mapping SourceColumn="customerId" DataSetColumn="customerId" />
+              <Mapping SourceColumn="userId" DataSetColumn="userId" />
+              <Mapping SourceColumn="title" DataSetColumn="title" />
+              <Mapping SourceColumn="description" DataSetColumn="description" />
+              <Mapping SourceColumn="location" DataSetColumn="location" />
+              <Mapping SourceColumn="contact" DataSetColumn="contact" />
+              <Mapping SourceColumn="type" DataSetColumn="type" />
+              <Mapping SourceColumn="url" DataSetColumn="url" />
+              <Mapping SourceColumn="start" DataSetColumn="start" />
+              <Mapping SourceColumn="end" DataSetColumn="end" />
+              <Mapping SourceColumn="createDate" DataSetColumn="createDate" />
+              <Mapping SourceColumn="createdBy" DataSetColumn="createdBy" />
+              <Mapping SourceColumn="lastUpdate" DataSetColumn="lastUpdate" />
+              <Mapping SourceColumn="lastUpdateBy" DataSetColumn="lastUpdateBy" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="client_scheduleDataSet3" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="client_scheduleDataSet3" msprop:Generator_UserDSName="client_scheduleDataSet3">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="appointmentbymonth" msprop:Generator_TableClassName="appointmentbymonthDataTable" msprop:Generator_TableVarName="tableappointmentbymonth" msprop:Generator_TablePropName="appointmentbymonth" msprop:Generator_RowDeletingName="appointmentbymonthRowDeleting" msprop:Generator_RowChangingName="appointmentbymonthRowChanging" msprop:Generator_RowEvHandlerName="appointmentbymonthRowChangeEventHandler" msprop:Generator_RowDeletedName="appointmentbymonthRowDeleted" msprop:Generator_UserTableName="appointmentbymonth" msprop:Generator_RowChangedName="appointmentbymonthRowChanged" msprop:Generator_RowEvArgName="appointmentbymonthRowChangeEvent" msprop:Generator_RowClassName="appointmentbymonthRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="appointmentId" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnappointmentId" msprop:Generator_ColumnPropNameInRow="appointmentId" msprop:Generator_ColumnPropNameInTable="appointmentIdColumn" msprop:Generator_UserColumnName="appointmentId" type="xs:int" />
+              <xs:element name="customerId" msprop:Generator_ColumnVarNameInTable="columncustomerId" msprop:Generator_ColumnPropNameInRow="customerId" msprop:Generator_ColumnPropNameInTable="customerIdColumn" msprop:Generator_UserColumnName="customerId" type="xs:int" />
+              <xs:element name="userId" msprop:Generator_ColumnVarNameInTable="columnuserId" msprop:Generator_ColumnPropNameInRow="userId" msprop:Generator_ColumnPropNameInTable="userIdColumn" msprop:Generator_UserColumnName="userId" type="xs:int" />
+              <xs:element name="title" msprop:Generator_ColumnVarNameInTable="columntitle" msprop:Generator_ColumnPropNameInRow="title" msprop:Generator_ColumnPropNameInTable="titleColumn" msprop:Generator_UserColumnName="title">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="description" msprop:Generator_ColumnVarNameInTable="columndescription" msprop:Generator_ColumnPropNameInRow="description" msprop:Generator_ColumnPropNameInTable="descriptionColumn" msprop:Generator_UserColumnName="description">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="65535" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="location" msprop:Generator_ColumnVarNameInTable="columnlocation" msprop:Generator_ColumnPropNameInRow="location" msprop:Generator_ColumnPropNameInTable="locationColumn" msprop:Generator_UserColumnName="location">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="65535" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="contact" msprop:Generator_ColumnVarNameInTable="columncontact" msprop:Generator_ColumnPropNameInRow="contact" msprop:Generator_ColumnPropNameInTable="contactColumn" msprop:Generator_UserColumnName="contact">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="65535" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="type" msprop:Generator_ColumnVarNameInTable="columntype" msprop:Generator_ColumnPropNameInRow="type" msprop:Generator_ColumnPropNameInTable="typeColumn" msprop:Generator_UserColumnName="type">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="65535" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="url" msprop:Generator_ColumnVarNameInTable="columnurl" msprop:Generator_ColumnPropNameInRow="url" msprop:Generator_ColumnPropNameInTable="urlColumn" msprop:Generator_UserColumnName="url">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="start" msprop:Generator_ColumnVarNameInTable="columnstart" msprop:Generator_ColumnPropNameInRow="start" msprop:Generator_ColumnPropNameInTable="startColumn" msprop:Generator_UserColumnName="start" type="xs:dateTime" />
+              <xs:element name="end" msprop:Generator_ColumnVarNameInTable="columnend" msprop:Generator_ColumnPropNameInRow="end" msprop:Generator_ColumnPropNameInTable="endColumn" msprop:Generator_UserColumnName="end" type="xs:dateTime" />
+              <xs:element name="createDate" msprop:Generator_ColumnVarNameInTable="columncreateDate" msprop:Generator_ColumnPropNameInRow="createDate" msprop:Generator_ColumnPropNameInTable="createDateColumn" msprop:Generator_UserColumnName="createDate" type="xs:dateTime" />
+              <xs:element name="createdBy" msprop:Generator_ColumnVarNameInTable="columncreatedBy" msprop:Generator_ColumnPropNameInRow="createdBy" msprop:Generator_ColumnPropNameInTable="createdByColumn" msprop:Generator_UserColumnName="createdBy">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="lastUpdate" msprop:Generator_ColumnVarNameInTable="columnlastUpdate" msprop:Generator_ColumnPropNameInRow="lastUpdate" msprop:Generator_ColumnPropNameInTable="lastUpdateColumn" msprop:Generator_UserColumnName="lastUpdate" type="xs:dateTime" />
+              <xs:element name="lastUpdateBy" msprop:Generator_ColumnVarNameInTable="columnlastUpdateBy" msprop:Generator_ColumnPropNameInRow="lastUpdateBy" msprop:Generator_ColumnPropNameInTable="lastUpdateByColumn" msprop:Generator_UserColumnName="lastUpdateBy">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:appointmentbymonth" />
+      <xs:field xpath="mstns:appointmentId" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
